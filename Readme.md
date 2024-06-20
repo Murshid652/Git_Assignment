@@ -336,7 +336,7 @@ it is used to restore multiple files to the state of the last commit.
 git restore file1.txt file2.txt
 ```
 
-## git restore --staged <file>
+### git restore --staged <file>
 This command is used to unstage a file
 ```
 PS C:\Users\acer\Desktop\git_assign> git status
@@ -362,9 +362,71 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-## git restore --source <commit> <file>
+### git restore --source <commit> <file>
 This restores a file to the state it was in a specific commit.
 ```
 PS C:\Users\acer\Desktop\git_assign> git restore --source a356a1dbfb6a04aca02fffea84f7331fe1c20c28 file1.txt
+```
+
+
+<br>
+
+## git restore --<mode> <commit>
+It is used to undo changes by resetting the current branch to a specified state.
+
+
+### git reset --soft <commit>
+This mode resets the HEAD to the specified commit but leaves the staging area and working directory unchanged.
+```
+ git reset --soft HEAD~1
+PS C:\Users\acer\Desktop\git_assign> git status
+On branch main
+Your branch is behind 'origin/main' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Readme.md
+        modified:   file3.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Readme.md
+
+```
+
+### git reset --mixed <commit>
+This mode resets the HEAD to the specified commit and updates the staging area to match the commit, but leaves the working directory unchanged.
+```
+git reset --mixed HEAD~1
+Unstaged changes after reset:
+M       Readme.md
+M       file3.txt
+PS C:\Users\acer\Desktop\git_assign> git status
+On branch main
+Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Readme.md
+        modified:   file3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+### git reset --hard <commit>
+This mode resets the HEAD to the specified commit and updates both the staging area and working directory to match the commit.
+```
+ git reset --hard HEAD~1 
+HEAD is now at 4fab482 5.4: Commleted commit
+PS C:\Users\acer\Desktop\git_assign> git status
+On branch main
+Your branch is behind 'origin/main' by 4 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+nothing to commit, working tree clean
 ```
 
