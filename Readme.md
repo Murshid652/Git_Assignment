@@ -242,3 +242,26 @@ PS C:\Users\acer\Desktop\git_assign> git diff --stat
  Readme.md | 39 +++++++++++++++++++++++++++++++++++++++
  1 file changed, 39 insertions(+)
 ```
+
+<br>
+
+## git commit
+It records changes to repo
+
+### git commit -m "message"
+This command commits staged changes with a descriptive message.
+```
+ git commit -m "5: commit commands"
+[main ab4f701] 5: commit commands
+ 4 files changed, 12 insertions(+), 3 deletions(-)
+```
+
+### git commit --amend -m "Updated message"
+This modifies the last commit, including updating the commit message or adding new changes.
+```
+ git commit --amend -m "5.1: updated commit message commit" 
+[main a356a1d] 5.1: updated commit message commit
+ Date: Fri Jun 21 00:59:44 2024 +0530
+ 4 files changed, 12 insertions(+), 3 deletions(-)
+ ```
+
