@@ -111,7 +111,88 @@ Changes not staged for commit:
   (use "git restore <file>..." to discard changes in working directory)
         modified:   Readme.md
 ```
+<br>
 
+## git status
+It shows state of the working directory and the staging area.
+```
+PS C:\Users\acer\Desktop\git_assign> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Readme.md
+        new file:   file1.txt
+        new file:   file2.txt
+        new file:   file3.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Readme.md
+```
+<br>
+
+## git diff
+Show changes between commits, commit and working tree
+```
+PS C:\Users\acer\Desktop\git_assign> git diff
+diff --git a/Readme.md b/Readme.md
+index 33fb511..11da29b 100644
+--- a/Readme.md
++++ b/Readme.md
+@@ -111,6 +111,28 @@ Changes not staged for commit:
+   (use "git restore <file>..." to discard changes in working directory)
+         modified:   Readme.md
+ 
++<br>
++
++## git status
++It shows state of the working directory and the staging area.
++
++PS C:\Users\acer\Desktop\git_assign> git status
++On branch main
++Your branch is up to date with 'origin/main'.
++
++Changes to be committed:
++  (use "git restore --staged <file>..." to unstage)
++        modified:   Readme.md
++        new file:   file1.txt
++        new file:   file2.txt
++        new file:   file3.txt
++
++Changes not staged for commit:
++  (use "git add <file>..." to update what will be committed)
++  (use "git restore <file>..." to discard changes in working directory)
++        modified:   Readme.md
++
++
+```
+
+### git diff --cached
+It shows difference between staging area and last commit
+
+```
+PS C:\Users\acer\Desktop\git_assign> git diff --cached
+diff --git a/Readme.md b/Readme.md
+index 33fb511..7f64649 100644
+--- a/Readme.md
++++ b/Readme.md
+@@ -111,7 +111,34 @@ Changes not staged for commit:
+   (use "git restore <file>..." to discard changes in working directory)
+         modified:   Readme.md
+ 
++<br>
++
++## git status
++It shows state of the working directory and the staging area.
++
++PS C:\Users\acer\Desktop\git_assign> git status
++On branch main
++Your branch is up to date with 'origin/main'.
++
+```
 
 
 
