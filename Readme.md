@@ -466,4 +466,18 @@ Mode                 LastWriteTime         Length Name
 -a----         6/21/2024   2:56 AM             10 file1.txt
 -a----         6/21/2024   2:54 AM          12736 Readme.md
 ```
+<br>
+
+## git mv
+It is used to rename and move a file
+
+
+### git mv oldname newname
+rename a file
+```
+PS C:\Users\acer\Desktop\git_assign> git mv FILE.txt file4.txt
+```
+
+### git mv file4 folder1/
+move a file to differend directory
 
