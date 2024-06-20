@@ -194,5 +194,51 @@ index 33fb511..7f64649 100644
 +
 ```
 
+### git diff HEAD
+shows the differences between the working directory and the last commit.
 
+```
+PS C:\Users\acer\Desktop\git_assign> git diff HEAD
+diff --git a/Readme.md b/Readme.md
+index 6c536ba..210a68d 100644
+--- a/Readme.md
++++ b/Readme.md
+@@ -194,5 +194,7 @@ index 33fb511..7f64649 100644
+ +
 
++### git diff HEAD
++shows the differences between the working directory and the last commit.
+
+```
+
+### git diff 'commit1' 'commit2'
+This command shows the differences between two specific commits.
+```
+ git diff 497ecf18b4ea10f13f0ba0db63fb0757119d8732 667beda7fb1a8b604f087b0ba39d884cc529daf1
+diff --git a/Readme.md b/Readme.md
+index 6c536ba..33fb511 100644
+--- a/Readme.md
++++ b/Readme.md
+@@ -111,88 +111,7 @@ Changes not staged for commit:
+   (use "git restore <file>..." to discard changes in working directory)
+         modified:   Readme.md
+
+-<br>
+-
+-## git status
+-It shows state of the working directory and the staging area.
+-
+-PS C:\Users\acer\Desktop\git_assign> git status
+-On branch main
+-Your branch is up to date with 'origin/main'.
+-
+```
+
+### git diff --stat
+This command provides a summary of changes, showing the number of insertions and deletions per file.
+
+```
+PS C:\Users\acer\Desktop\git_assign> git diff --stat
+ Readme.md | 39 +++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 39 insertions(+)
+```
