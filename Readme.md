@@ -478,6 +478,53 @@ rename a file
 PS C:\Users\acer\Desktop\git_assign> git mv FILE.txt file4.txt
 ```
 
-### git mv file4 folder1/
-move a file to differend directory
+### git mv file folder1/
+move a file to different directory
+```
+PS C:\Users\acer\Desktop\git_assign> git mv file4.txt folder1/
+```
+
+<br>
+
+## git branch
+The git branch command lets you create, list, rename, and delete branches
+
+### git branch
+list all branches
+```
+PS C:\Users\acer\Desktop\git_assign> git branch
+* main
+```
+
+### git branch 'branchname'
+create a branch
+```
+PS C:\Users\acer\Desktop\git_assign> git branch branch1 
+PS C:\Users\acer\Desktop\git_assign> git branch 
+  branch1
+* main
+```
+
+### git branch -m branch1 branch2
+rename a branch
+```
+PS C:\Users\acer\Desktop\git_assign> git branch
+  branch1
+* main
+PS C:\Users\acer\Desktop\git_assign> git branch -m branch1 branch2 
+PS C:\Users\acer\Desktop\git_assign> git branch
+  branch2
+* main
+```
+
+### git branch -d 'branchname'
+delete a branch
+```
+PS C:\Users\acer\Desktop\git_assign> git branch -d branch1
+Deleted branch branch1 (was e9e02f8).
+PS C:\Users\acer\Desktop\git_assign> git branch
+* main
+```
+
+
 
