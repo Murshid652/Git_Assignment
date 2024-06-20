@@ -242,3 +242,12 @@ PS C:\Users\acer\Desktop\git_assign> git diff --stat
  Readme.md | 39 +++++++++++++++++++++++++++++++++++++++
  1 file changed, 39 insertions(+)
 ```
+
+<br>
+
+## git commit
+It records changes to repo
+
+### git commit -m "message"
+This command commits staged changes with a descriptive message.
+
