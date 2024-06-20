@@ -264,3 +264,5 @@ This modifies the last commit, including updating the commit message or adding n
  Date: Fri Jun 21 00:59:44 2024 +0530
  4 files changed, 12 insertions(+), 3 deletions(-)
  ```
+
+### git commit --allow-empty -m "Empty commit"
