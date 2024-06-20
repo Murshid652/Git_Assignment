@@ -526,5 +526,13 @@ PS C:\Users\acer\Desktop\git_assign> git branch
 * main
 ```
 
+<br>
+
+## git checkout
+It is used to switch branches or restore working tree files
+
+### git checkout 'branch-name'
+This command switches your working directory to the specified branch.
+
 
 
