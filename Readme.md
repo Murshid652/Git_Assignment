@@ -264,3 +264,56 @@ This modifies the last commit, including updating the commit message or adding n
  Date: Fri Jun 21 00:59:44 2024 +0530
  4 files changed, 12 insertions(+), 3 deletions(-)
  ```
+
+<br>
+
+## git notes
+Add or inspect object notes
+
+### git notes -m "note message" <commit-hash>
+adds note to commit
+
+```
+git notes add -m "redundant commit" 79b96e04b23c0b93f43a9ed3bfe440d8f006fbb6
+```
+
+### git notes list
+it gives all notes in the repo
+```
+PS C:\Users\acer\Desktop\git_assign> git notes list
+02de2541005af2779c152bc52292bd4e91057001 79b96e04b23c0b93f43a9ed3bfe440d8f006fbb6
+43a65668771a41ec76366be09c20582036b503dd ee697e0b348a7faf337caf0df371835d52ee1ce5
+```
+
+### git notes show <commit-hash>
+to view the note
+
+```
+PS C:\Users\acer\Desktop\git_assign> git notes show 79b96e04b23c0b93f43a9ed3bfe440d8f006fbb6
+redundant commit
+```
+
+### git notes append -m "Additional note" <commit-hash>
+it add to additional notes to commit
+
+```
+PS C:\Users\acer\Desktop\git_assign> git notes append -m "test" 79b96e04b23c0b93f43a9ed3bfe440d8f006fbb6
+PS C:\Users\acer\Desktop\git_assign> git notes show 79b96e04b23c0b93f43a9ed3bfe440d8f006fbb6
+redundant commit
+
+test
+```
+
+### git notes remove <commit-hash>
+to remove note from a commit
+
+```
+PS C:\Users\acer\Desktop\git_assign> git notes list
+02de2541005af2779c152bc52292bd4e91057001 79b96e04b23c0b93f43a9ed3bfe440d8f006fbb6
+43a65668771a41ec76366be09c20582036b503dd ee697e0b348a7faf337caf0df371835d52ee1ce5
+PS C:\Users\acer\Desktop\git_assign> git notes remove 79b96e04b23c0b93f43a9ed3bfe440d8f006fbb6
+Removing note for object 79b96e04b23c0b93f43a9ed3bfe440d8f006fbb6
+PS C:\Users\acer\Desktop\git_assign> git notes list
+43a65668771a41ec76366be09c20582036b503dd ee697e0b348a7faf337caf0df371835d52ee1ce5
+PS C:\Users\acer\Desktop\git_assign>
+```
