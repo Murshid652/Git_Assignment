@@ -13,12 +13,12 @@ On branch main
 Your branch is up to date with 'origin/main'.
 
 Changes to be committed:
-  (use "git restore --staged "file"..." to unstage)
+  (use "git restore --staged <file>..." to unstage)
         new file:   file1.txt
 
 Changes not staged for commit:
-  (use "git add "file"..." to update what will be committed)
-  (use "git restore "file"..." to discard changes in working directory)
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
         modified:   Readme.md
 ```
 
@@ -31,13 +31,13 @@ On branch main
 Your branch is up to date with 'origin/main'.
 
 Changes to be committed:
-  (use "git restore --staged "file"..." to unstage)
+  (use "git restore --staged <file>..." to unstage)
         new file:   file1.txt
         new file:   file2.txt
 
 Changes not staged for commit:
-  (use "git add "file"..." to update what will be committed)
-  (use "git restore "file"..." to discard changes in working directory)
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
         modified:   Readme.md
 ```
 
@@ -50,7 +50,7 @@ On branch main
 Your branch is up to date with 'origin/main'.
 
 Changes to be committed:
-  (use "git restore --staged "file"..." to unstage)
+  (use "git restore --staged <file>..." to unstage)
         modified:   Readme.md
         new file:   file1.txt
         new file:   file2.txt
@@ -65,13 +65,13 @@ On branch main
 Your branch is up to date with 'origin/main'.
 
 Changes to be committed:
-  (use "git restore --staged "file"..." to unstage)
+  (use "git restore --staged <file>..." to unstage)
         modified:   Readme.md
         new file:   file1.txt
         new file:   file2.txt
 
 Untracked files:
-  (use "git add "file"..." to include in what will be committed)
+  (use "git add <file>..." to include in what will be committed)
         file3.txt
 ```
 
@@ -84,7 +84,7 @@ On branch main
 Your branch is up to date with 'origin/main'.
 
 Changes to be committed:
-  (use "git restore --staged "file"..." to unstage)
+  (use "git restore --staged <file>..." to unstage)
         modified:   Readme.md
         new file:   file1.txt
         new file:   file3.txt
@@ -100,15 +100,15 @@ On branch main
 Your branch is up to date with 'origin/main'.
 
 Changes to be committed:
-  (use "git restore --staged "file"..." to unstage)
+  (use "git restore --staged <file>..." to unstage)
         modified:   Readme.md
         new file:   file1.txt
         new file:   file2.txt
         new file:   file3.txt
 
 Changes not staged for commit:
-  (use "git add "file"..." to update what will be committed)
-  (use "git restore "file"..." to discard changes in working directory)
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
         modified:   Readme.md
 ```
 <br>
@@ -121,15 +121,15 @@ On branch main
 Your branch is up to date with 'origin/main'.
 
 Changes to be committed:
-  (use "git restore --staged "file"..." to unstage)
+  (use "git restore --staged <file>..." to unstage)
         modified:   Readme.md
         new file:   file1.txt
         new file:   file2.txt
         new file:   file3.txt
 
 Changes not staged for commit:
-  (use "git add "file"..." to update what will be committed)
-  (use "git restore "file"..." to discard changes in working directory)
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
         modified:   Readme.md
 ```
 <br>
@@ -143,7 +143,7 @@ index 33fb511..11da29b 100644
 --- a/Readme.md
 +++ b/Readme.md
 @@ -111,6 +111,28 @@ Changes not staged for commit:
-   (use "git restore "file"..." to discard changes in working directory)
+   (use "git restore <file>..." to discard changes in working directory)
          modified:   Readme.md
  
 +<br>
@@ -156,15 +156,15 @@ index 33fb511..11da29b 100644
 +Your branch is up to date with 'origin/main'.
 +
 +Changes to be committed:
-+  (use "git restore --staged "file"..." to unstage)
++  (use "git restore --staged <file>..." to unstage)
 +        modified:   Readme.md
 +        new file:   file1.txt
 +        new file:   file2.txt
 +        new file:   file3.txt
 +
 +Changes not staged for commit:
-+  (use "git add "file"..." to update what will be committed)
-+  (use "git restore "file"..." to discard changes in working directory)
++  (use "git add <file>..." to update what will be committed)
++  (use "git restore <file>..." to discard changes in working directory)
 +        modified:   Readme.md
 +
 +
@@ -180,7 +180,7 @@ index 33fb511..7f64649 100644
 --- a/Readme.md
 +++ b/Readme.md
 @@ -111,7 +111,34 @@ Changes not staged for commit:
-   (use "git restore "file"..." to discard changes in working directory)
+   (use "git restore <file>..." to discard changes in working directory)
          modified:   Readme.md
  
 +<br>
@@ -220,7 +220,7 @@ index 6c536ba..33fb511 100644
 --- a/Readme.md
 +++ b/Readme.md
 @@ -111,88 +111,7 @@ Changes not staged for commit:
-   (use "git restore "file"..." to discard changes in working directory)
+   (use "git restore <file>..." to discard changes in working directory)
          modified:   Readme.md
 
 -<br>
@@ -270,7 +270,7 @@ This modifies the last commit, including updating the commit message or adding n
 ## git notes
 Add or inspect object notes
 
-### git notes -m "note message" 'commit'
+### git notes -m "note message" <commit-hash>
 adds note to commit
 
 ```
@@ -285,7 +285,7 @@ PS C:\Users\acer\Desktop\git_assign> git notes list
 43a65668771a41ec76366be09c20582036b503dd ee697e0b348a7faf337caf0df371835d52ee1ce5
 ```
 
-### git notes show 'commit'
+### git notes show <commit-hash>
 to view the note
 
 ```
@@ -293,7 +293,7 @@ PS C:\Users\acer\Desktop\git_assign> git notes show 79b96e04b23c0b93f43a9ed3bfe4
 redundant commit
 ```
 
-### git notes append -m "Additional note" 'commit'
+### git notes append -m "Additional note" <commit-hash>
 it add to additional notes to commit
 
 ```
@@ -304,7 +304,7 @@ redundant commit
 test
 ```
 
-### git notes remove 'commit'
+### git notes remove <commit-hash>
 to remove note from a commit
 
 ```
@@ -336,7 +336,7 @@ it is used to restore multiple files to the state of the last commit.
 git restore file1.txt file2.txt
 ```
 
-### git restore --staged file
+### git restore --staged <file>
 This command is used to unstage a file
 ```
 PS C:\Users\acer\Desktop\git_assign> git status
@@ -344,7 +344,7 @@ On branch main
 Your branch is up to date with 'origin/main'.
 
 Changes to be committed:
-  (use "git restore --staged "file"..." to unstage)
+  (use "git restore --staged <file>..." to unstage)
         modified:   Readme.md
         modified:   file3.txt
 
@@ -354,16 +354,15 @@ On branch main
 Your branch is up to date with 'origin/main'.
 
 Changes not staged for commit:
-  (use "git add "file"..." to update what will be committed)
-  (use "git restore "file"..." to discard changes in working directory)
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
         modified:   Readme.md
         modified:   file3.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-### git restore --source 'commit'
- "file"
+### git restore --source <commit> <file>
 This restores a file to the state it was in a specific commit.
 ```
 PS C:\Users\acer\Desktop\git_assign> git restore --source a356a1dbfb6a04aca02fffea84f7331fe1c20c28 file1.txt
@@ -372,13 +371,11 @@ PS C:\Users\acer\Desktop\git_assign> git restore --source a356a1dbfb6a04aca02fff
 
 <br>
 
-## git restore --'mode' 'commit'
-
+## git restore --<mode> <commit>
 It is used to undo changes by resetting the current branch to a specified state.
 
 
-### git reset --soft 'commit'
-
+### git reset --soft <commit>
 This mode resets the HEAD to the specified commit but leaves the staging area and working directory unchanged.
 ```
  git reset --soft HEAD~1
@@ -388,19 +385,18 @@ Your branch is behind 'origin/main' by 1 commit, and can be fast-forwarded.
   (use "git pull" to update your local branch)
 
 Changes to be committed:
-  (use "git restore --staged "file"..." to unstage)
+  (use "git restore --staged <file>..." to unstage)
         modified:   Readme.md
         modified:   file3.txt
 
 Changes not staged for commit:
-  (use "git add "file"..." to update what will be committed)
-  (use "git restore "file"..." to discard changes in working directory)
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
         modified:   Readme.md
 
 ```
 
-### git reset --mixed 'commit'
-
+### git reset --mixed <commit>
 This mode resets the HEAD to the specified commit and updates the staging area to match the commit, but leaves the working directory unchanged.
 ```
 git reset --mixed HEAD~1
@@ -413,16 +409,15 @@ Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
   (use "git pull" to update your local branch)
 
 Changes not staged for commit:
-  (use "git add "file"..." to update what will be committed)
-  (use "git restore "file"..." to discard changes in working directory)
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
         modified:   Readme.md
         modified:   file3.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-### git reset --hard 'commit'
-
+### git reset --hard <commit>
 This mode resets the HEAD to the specified commit and updates both the staging area and working directory to match the commit.
 ```
  git reset --hard HEAD~1 
@@ -433,38 +428,6 @@ Your branch is behind 'origin/main' by 4 commits, and can be fast-forwarded.
   (use "git pull" to update your local branch)
 
 nothing to commit, working tree clean
-```
-
-<br>
-
-## git rm
-remove files from working directory
-```
-PS C:\Users\acer\Desktop\git_assign> ls
-
-
-    Directory: C:\Users\acer\Desktop\git_assign
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
--a----         6/21/2024   2:56 AM             10 file1.txt
--a----         6/21/2024   2:34 AM             22 file3.txt
--a----         6/21/2024   2:54 AM          12736 Readme.md
-
-
-PS C:\Users\acer\Desktop\git_assign> git rm file3.txt
-rm 'file3.txt'
-PS C:\Users\acer\Desktop\git_assign> ls
-
-
-    Directory: C:\Users\acer\Desktop\git_assign
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
--a----         6/21/2024   2:56 AM             10 file1.txt
--a----         6/21/2024   2:54 AM          12736 Readme.md
 ```
 <br>
 
