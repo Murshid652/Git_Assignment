@@ -723,3 +723,40 @@ Date:   Thu Jun 20 23:08:15 2024 +0530
 
     first commit
 ```
+
+<br>
+
+## git stash
+saves uncommited changes while switching to other branch
+```
+PS C:\Users\acer\Desktop\git_assign> git stash
+Saved working directory and index state WIP on main: 5e5738a 15: git log command
+```
+
+
+### git stash list
+shows list of stashes saved
+```
+ git stash list
+stash@{0}: WIP on main: 5e5738a 15: git log command
+stash@{1}: WIP on main: 5e5738a 15: git log command
+stash@{2}: WIP on main: 5e5738a 15: git log command
+```
+
+### git stash apply
+applies most recent stash to working directory
+
+```
+PS C:\Users\acer\Desktop\git_assign> git stash apply
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Readme.md
+```
+
+### git stash drop stash@{1}
+drop the given stash
+
