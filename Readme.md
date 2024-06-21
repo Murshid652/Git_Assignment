@@ -478,75 +478,48 @@ rename a file
 PS C:\Users\acer\Desktop\git_assign> git mv FILE.txt file4.txt
 ```
 
-### git mv file folder1/
-move a file to different directory
-```
-PS C:\Users\acer\Desktop\git_assign> git mv file4.txt folder1/
-```
+### git mv file4 folder1/
+move a file to differend directory
 
 <br>
 
-## git branch
-The git branch command lets you create, list, rename, and delete branches
+## git switch
+it is used to switch branches
 
-### git branch
-list all branches
-```
-PS C:\Users\acer\Desktop\git_assign> git branch
-* main
-```
 
-### git branch 'branchname'
-create a branch
+### git switch branch-name
+switch to specific branch
 ```
-PS C:\Users\acer\Desktop\git_assign> git branch branch1 
-PS C:\Users\acer\Desktop\git_assign> git branch 
+PS C:\Users\acer\Desktop\git_assign> git branch        
   branch1
-* main
-```
-
-### git branch -m branch1 branch2
-rename a branch
-```
-PS C:\Users\acer\Desktop\git_assign> git branch
-  branch1
-* main
-PS C:\Users\acer\Desktop\git_assign> git branch -m branch1 branch2 
-PS C:\Users\acer\Desktop\git_assign> git branch
   branch2
 * main
+  new-branch-name
+PS C:\Users\acer\Desktop\git_assign> git switch branch1
+Switched to branch 'branch1'
+PS C:\Users\acer\Desktop\git_assign> git branch        
+* branch1
+  branch2
+  main
+  new-branch-name
 ```
 
-### git branch -d 'branchname'
-delete a branch
+### git switch -c branch-name
+Creates a new branch and sitches to it
 ```
-PS C:\Users\acer\Desktop\git_assign> git branch -d branch1
-Deleted branch branch1 (was e9e02f8).
 PS C:\Users\acer\Desktop\git_assign> git branch
+  branch1
+  branch2
 * main
+  new-branch-name
+PS C:\Users\acer\Desktop\git_assign> git switch -c branch3
+Switched to a new branch 'branch3'
+PS C:\Users\acer\Desktop\git_assign> git branch
+  branch1
+  branch2
+* branch3
+  main
+  new-branch-name
 ```
-
-<br>
-
-## git checkout
-It is used to switch branches or restore working tree files
-
-### git checkout 'branch-name'
-This command switches your working directory to the specified branch.
-```
- git checkout main   
-Switched to branch 'main'
-Your branch is up to date with 'origin/main'.
-```
-
-### git checkout -b new-branch-name
-create and switch to new branch
-```
-PS C:\Users\acer\Desktop\git_assign> git checkout -b new-branch-name
-Switched to a new branch 'new-branch-name'
-```
-
-
-
 
 
