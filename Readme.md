@@ -483,6 +483,23 @@ move a file to differend directory
 
 <br>
 
+### git checkout 'branch-name'
+This command switches your working directory to the specified branch.
+```
+ git checkout main   
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+```
+
+### git checkout -b new-branch-name
+create and switch to new branch
+```
+PS C:\Users\acer\Desktop\git_assign> git checkout -b new-branch-name
+Switched to a new branch 'new-branch-name'
+```
+
+<br>
+
 ## git switch
 it is used to switch branches
 
