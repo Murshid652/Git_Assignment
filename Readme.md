@@ -1102,6 +1102,47 @@ PS C:\Users\acer\Desktop\git_assign> git range-diff 0c04e8f2feb0efadbe1299f11186
 
 <br>
 
+## git shortlog
+summarize git commit history
+```
+PS C:\Users\acer\Desktop\git_assign> git shortlog
+Murshid Raja (33):
+      first commit
+      2: git add commands
+      2.1 : Retry git add commands
+      3: git status command
+      4: git diff command
+      5.1: updated commit message commit
+      5.2: updated commit message
+      5.2: updated commit message
+      5.3: updated commit message
+      5.4: Commleted commit
+      5.4: Commleted commit
+      6: Git notes commands
+      7: git restore commands
+      8: git restore commands
+      9: git rm command
+      10: git mv command
+      11: git branch command
+      12.1: checkout command
+      12.2: checkout command (create and switch to branch)
+      13.1: git switch commands
+      14: git merge commands
+      12.3 : updating git checkout command
+      15: git log command
+      16.1: git stash command
+      16.2: Some more git stash commands
+      17: git tag commands
+      18: git worktree command
+      19: git fetch
+      20: git remote command
+      21: git submodule
+      21.1: git submodule command added readme
+      22: git show command
+      23: git range-diff command
+```
+
+
 
 
 
