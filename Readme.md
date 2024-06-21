@@ -966,7 +966,12 @@ PS C:\Users\acer\Desktop\git_assign> git remote add hello https://github.com/Mur
 PS C:\Users\acer\Desktop\git_assign> git remote
 hello
 origin
+PS C:\Users\acer\Desktop\git_assign> git remote remove hello
+PS C:\Users\acer\Desktop\git_assign> git remote             
+origin
 ```
+
+
 
 
 
