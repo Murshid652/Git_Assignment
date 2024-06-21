@@ -897,4 +897,21 @@ PS C:\Users\acer\Desktop\git_assign> git worktree list
 C:/Users/acer/Desktop/git_assign  fbf3c82 [main]
 ```
 
+<br>
+
+## git fetch
+it updates the local repositiry with remote repository
+
+
+### git fetch origin main
+updates local repository with main branch
+```
+PS C:\Users\acer\Desktop\git_assign> git fetch origin main
+From https://github.com/Murshid652/Git_Assignment
+ * branch            main       -> FETCH_HEAD
+```
+
+
+
+
 
