@@ -1142,7 +1142,14 @@ Murshid Raja (33):
       23: git range-diff command
 ```
 
+<br>
 
+## git describe
+Give an object a human readable name based on an available ref
+```
+PS C:\Users\acer\Desktop\git_assign> git describe
+v1.0.1-9-g8a7ceaa
+```
 
 
 
