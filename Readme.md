@@ -911,6 +911,63 @@ From https://github.com/Murshid652/Git_Assignment
  * branch            main       -> FETCH_HEAD
 ```
 
+<br>
+
+## git pull
+updates local repository with content of remote repository
+```
+PS C:\Users\acer\Desktop\git_assign> git pull origin main
+From https://github.com/Murshid652/Git_Assignment
+ * branch            main       -> FETCH_HEAD
+Merge made by the 'ort' strategy.
+ Readme.md | 434 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 434 insertions(+)
+```
+
+<br>
+
+## git push
+Update remote repository with local repository
+```
+PS C:\Users\acer\Desktop\git_assign> git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 465 bytes | 465.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+```
+
+<br>
+
+## git remote
+use to add, remove, rename remote repository
+
+```
+ git remote
+origin
+PS C:\Users\acer\Desktop\git_assign> git remote show origin
+* remote origin
+  Fetch URL: https://github.com/Murshid652/Git_Assignment.git
+  Push  URL: https://github.com/Murshid652/Git_Assignment.git
+  HEAD branch: main
+  Remote branches:
+    branch1 tracked
+    branch2 tracked
+    main    tracked
+  Local branch configured for 'git pull':
+    main merges with remote main
+  Local refs configured for 'git push':
+    branch1 pushes to branch1 (up to date)
+    branch2 pushes to branch2 (fast-forwardable)
+    main    pushes to main    (up to date)
+PS C:\Users\acer\Desktop\git_assign> git remote add hello https://github.com/Murshid652/git.git
+PS C:\Users\acer\Desktop\git_assign> git remote
+hello
+origin
+```
+
 
 
 
