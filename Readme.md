@@ -760,3 +760,63 @@ Changes not staged for commit:
 ### git stash drop stash@{1}
 drop the given stash
 
+
+### git stash show
+show the file that is stashed and changes made to it
+```
+PS C:\Users\acer\Desktop\git_assign> git stash show
+ Readme.md | 13 ++++++++++++-
+ 1 file changed, 12 insertions(+), 1 deletion(-)
+PS C:\Users\acer\Desktop\git_assign> git stash show -p
+diff --git a/Readme.md b/Readme.md
+index 24314f9..6327ad5 100644
+--- a/Readme.md
++++ b/Readme.md
+@@ -757,6 +757,17 @@ Changes not staged for commit:
+         modified:   Readme.md
+
+-### git stash drop stash@{1}
++### git stash drop 2^M
+ drop the given stash
++^M
++PS C:\Users\acer\Desktop\git_assign> git stash list ^M
++stash@{0}: WIP on main: 5e5738a 15: git log command^M
++stash@{1}: WIP on main: 5e5738a 15: git log command^M
++stash@{2}: WIP on main: 5e5738a 15: git log command^M
++PS C:\Users\acer\Desktop\git_assign> git stash drop -q 2        ^M
++PS C:\Users\acer\Desktop\git_assign> git stash list^M
++stash@{0}: WIP on main: 5e5738a 15: git log command^M
++stash@{1}: WIP on main: 5e5738a 15: git log command^M
++^M
++
+
+ ```
+
+ ### git stash pop
+ applies stash and deleted from stash list
+
+ ```
+ PS C:\Users\acer\Desktop\git_assign> git stash list
+stash@{0}: WIP on main: 33b8b33 16.1: git stash command
+stash@{1}: WIP on main: 33b8b33 16.1: git stash command
+stash@{2}: WIP on main: 5e5738a 15: git log command
+stash@{3}: WIP on main: 5e5738a 15: git log command
+PS C:\Users\acer\Desktop\git_assign> git stash pop
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Readme.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (072f27ed594be87bfefcd48593642b2c079bfd9c)
+PS C:\Users\acer\Desktop\git_assign> git stash list
+stash@{0}: WIP on main: 33b8b33 16.1: git stash command
+stash@{1}: WIP on main: 5e5738a 15: git log command
+stash@{2}: WIP on main: 5e5738a 15: git log command
+ ```
+
+
+
