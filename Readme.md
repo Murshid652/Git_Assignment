@@ -987,11 +987,96 @@ Receiving objects: 100% (12/12), done.
 Resolving deltas: 100% (1/1), done.
 ```
 
+### git submodule status
+to check availiable submodule 
+```
+PS C:\Users\acer\Desktop\git_assign\gitsubmodule> cd ../
+PS C:\Users\acer\Desktop\git_assign> git submodule status
++65b62e9e882ef20186749c3174172ee4b799a7db gitsubmodule (heads/master)
+```
+
 <br>
 
-## git 
+## git show
+display various objects and information in repository
+
+### git show 'commithash'
+display everything about that particular commit
+```
+PS C:\Users\acer\Desktop\git_assign> git show c3bf0e217a37d0ebf0d11bef8cd1ae930b76d879
+commit c3bf0e217a37d0ebf0d11bef8cd1ae930b76d879 (HEAD -> main, origin/main)
+Author: Murshid Raja <murshidraja652@example.com>
+Date:   Fri Jun 21 14:54:37 2024 +0530
+
+    21.1: git submodule command added readme
+
+diff --git a/Readme.md b/Readme.md
+index 4cd1e9b..2117b3e 100644
+--- a/Readme.md
++++ b/Readme.md
+@@ -971,6 +971,25 @@ PS C:\Users\acer\Desktop\git_assign> git remote
+ origin
+ 
+
++<br>^M
++^M
++## git submodule^M
++to get a secondary remote repository as a module^M
++^M
++^M
++PS C:\Users\acer\Desktop\git_assign> git submodule add https://github.com/Murshid652/git.git gitsubmodule/ ^M
++Cloning into 'C:/Users/acer/Desktop/git_assign/gitsubmodule'...^M
++remote: Enumerating objects: 12, done.^M
++remote: Counting objects: 100% (12/12), done.^M
++remote: Compressing objects: 100% (7/7), done.^M
++remote: Total 12 (delta 1), reused 12 (delta 1), pack-reused 0^M
++Receiving objects: 100% (12/12), done.^M
++Resolving deltas: 100% (1/1), done.^M
++^M
++^M
++<br>^M
++^M
++## git ^M
+```
 
 
+### git show 'commithash' Readme.md
+show changes in Readme.md file for a particular commit hash
+```
+PS C:\Users\acer\Desktop\git_assign> git show c3bf0e217a37d0ebf0d11bef8cd1ae930b76d879 Readme.md
+commit c3bf0e217a37d0ebf0d11bef8cd1ae930b76d879 (HEAD -> main, origin/main)
+Author: Murshid Raja <murshidraja652@example.com>
+Date:   Fri Jun 21 14:54:37 2024 +0530
+
+    21.1: git submodule command added readme
+
+diff --git a/Readme.md b/Readme.md
+index 4cd1e9b..2117b3e 100644
+--- a/Readme.md
++++ b/Readme.md
+@@ -971,6 +971,25 @@ PS C:\Users\acer\Desktop\git_assign> git remote
+ origin
+
++<br>^M
++^M
++## git submodule^M
++to get a secondary remote repository as a module^M
++^M
++^M
++PS C:\Users\acer\Desktop\git_assign> git submodule add https://github.com/Murshid652/git.git gitsubmodule/ ^M
++Cloning into 'C:/Users/acer/Desktop/git_assign/gitsubmodule'...^M
++remote: Enumerating objects: 12, done.^M
++remote: Counting objects: 100% (12/12), done.^M
++remote: Compressing objects: 100% (7/7), done.^M
++remote: Total 12 (delta 1), reused 12 (delta 1), pack-reused 0^M
++Receiving objects: 100% (12/12), done.^M
++Resolving deltas: 100% (1/1), done.^M
++^M
++^M
++<br>^M
++^M
++## git ^M
+```
 
 
 
