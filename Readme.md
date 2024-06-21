@@ -845,6 +845,56 @@ v1.0.0
 v1.0.1
 ```
 
+### git tag -d v1.0.0
+delete tag locally
+```
+PS C:\Users\acer\Desktop\git_assign> git tag          
+v1.0.0
+v1.0.1
+PS C:\Users\acer\Desktop\git_assign> git tag -d v1.0.0
+Deleted tag 'v1.0.0' (was 5f5dcc1)
+PS C:\Users\acer\Desktop\git_assign> git tag
+v1.0.1
+```
 
+### git push origin --delete tag v1.0.0
+delete tags on remote repository
+```
+ git push origin --delete tag v1.0.1
+To https://github.com/Murshid652/Git_Assignment.git
+ - [deleted]         v1.0.1
+```
+
+<br>
+
+## git worktree
+Git Worktree is a feature that allows you to check out multiple branches at once.
+
+
+### git worktree ../branch branch
+creates a new directory for another branch
+```
+PS C:\Users\acer\Desktop\git_assign> git worktree add ../branch1 branch1
+Preparing worktree (checking out 'branch1')
+HEAD is now at a9620f3 14.1 : Temporary changes for merge command
+```
+
+### git worktree list
+get list of all worktree created
+```
+C:/Users/acer/Desktop/git_assign  fbf3c82 [main]
+C:/Users/acer/Desktop/branch1     a9620f3 [branch1]
+```
+
+### git worktree remove 'path'
+remove a worktree
+```
+PS C:\Users\acer\Desktop\git_assign> git worktree list
+C:/Users/acer/Desktop/git_assign  fbf3c82 [main]
+C:/Users/acer/Desktop/branch1     a9620f3 [branch1]
+PS C:\Users\acer\Desktop\git_assign> git worktree remove ../branch1
+PS C:\Users\acer\Desktop\git_assign> git worktree list
+C:/Users/acer/Desktop/git_assign  fbf3c82 [main]
+```
 
 
