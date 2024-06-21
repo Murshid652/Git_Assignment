@@ -818,5 +818,33 @@ stash@{1}: WIP on main: 5e5738a 15: git log command
 stash@{2}: WIP on main: 5e5738a 15: git log command
  ```
 
+<br>
+
+## git tag
+tags are references that point to specific points in a Git repository's history.
+git tags shows list of all tags
+```
+PS C:\Users\acer\Desktop\git_assign> git tag       
+v1.0.0
+```
+
+### git tag v1.0.0
+this command used to create lightweight tag 
+```
+PS C:\Users\acer\Desktop\git_assign> git tag v1.0.0
+PS C:\Users\acer\Desktop\git_assign> git tag       
+v1.0.0
+```
+
+### git tag -a v1.0.1 -m "annoted tag"
+this command used to create annoted tag 
+```
+PS C:\Users\acer\Desktop\git_assign> git tag -a v1.0.1 -m "annoted tag"
+PS C:\Users\acer\Desktop\git_assign> git tag
+v1.0.0
+v1.0.1
+```
+
+
 
 
