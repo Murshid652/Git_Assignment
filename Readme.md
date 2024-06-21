@@ -971,6 +971,25 @@ PS C:\Users\acer\Desktop\git_assign> git remote
 origin
 ```
 
+<br>
+
+## git submodule
+to get a secondary remote repository as a module
+
+```
+PS C:\Users\acer\Desktop\git_assign> git submodule add https://github.com/Murshid652/git.git gitsubmodule/ 
+Cloning into 'C:/Users/acer/Desktop/git_assign/gitsubmodule'...
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 12 (delta 1), reused 12 (delta 1), pack-reused 0
+Receiving objects: 100% (12/12), done.
+Resolving deltas: 100% (1/1), done.
+```
+
+<br>
+
+## git 
 
 
 
