@@ -579,3 +579,147 @@ To https://github.com/Murshid652/Git_Assignment.git
    e9e02f8..a9620f3  branch2 -> branch2
 ```
 
+<br>
+
+## git log 
+this command is used to get commit history of repo
+
+```
+PS C:\Users\acer\Desktop\git_assign> git log
+commit dafee0c512c7441af29e580f2f013f60190312bf (HEAD -> main, origin/main)
+Author: Murshid Raja <murshidraja652@example.com>
+Date:   Fri Jun 21 10:22:01 2024 +0530
+
+    12.3 : updating git checkout command
+
+commit 0c04e8f2feb0efadbe1299f111864fcb3d039e22
+Author: Murshid Raja <murshidraja652@example.com>
+Date:   Fri Jun 21 10:09:49 2024 +0530
+
+    14: git merge commands
+
+commit 217bc2988d3de0159664015a57aeaf303aebc3ca
+Author: Murshid Raja <murshidraja652@example.com>
+Date:   Fri Jun 21 09:52:50 2024 +0530
+
+    13.1: git switch commands
+
+commit c3a71a3e824e299590fe404c19ab8423287fdfb3 (branch3)
+Author: Murshid Raja <murshidraja652@example.com>
+Date:   Fri Jun 21 03:57:58 2024 +0530
+
+    12.2: checkout command (create and switch to branch)
+
+commit be1e4ecff1136feae1bdcb6f66ca548a3fc80e02 (new-branch-name)
+Author: Murshid Raja <murshidraja652@example.com>
+Date:   Fri Jun 21 03:51:00 2024 +0530
+
+    12.1: checkout command
+
+commit e20fb079878ff7ad2dc753c009e3b98b268dfbcb
+Author: Murshid Raja <murshidraja652@example.com>
+Date:   Fri Jun 21 03:34:50 2024 +0530
+
+    11: git branch command
+
+commit e9e02f8b9b6341906d5cd871c2566ace545db091
+Author: Murshid Raja <murshidraja652@example.com>
+Date:   Fri Jun 21 03:18:53 2024 +0530
+
+    10: git mv command
+
+commit c4a38b53560357e51b8073c0460ca1ce901b674b
+Author: Murshid Raja <murshidraja652@example.com>
+Date:   Fri Jun 21 03:01:28 2024 +0530
+
+    9: git rm command
+
+commit 44689088a98e0742db59afd62a150c6021154625
+Author: Murshid Raja <murshidraja652@example.com>
+Date:   Fri Jun 21 02:41:14 2024 +0530
+
+    8: git restore commands
+
+commit fe16926fb721afa3773e3e405e56c554b1636c2b
+Author: Murshid Raja <murshidraja652@example.com>
+Date:   Fri Jun 21 02:26:13 2024 +0530
+
+    7: git restore commands
+
+commit a9a80d8feaf3dbf8882137a0a4c15d54f995cc25
+Author: Murshid Raja <murshidraja652@example.com>
+Date:   Fri Jun 21 01:54:25 2024 +0530
+
+    6: Git notes commands
+
+commit ee697e0b348a7faf337caf0df371835d52ee1ce5
+Merge: 4fab482 191f986
+Author: Murshid Raja <murshidraja652@example.com>
+Date:   Fri Jun 21 01:27:40 2024 +0530
+
+    5.4: Commleted commit
+
+Notes:
+    redundant commit and spelling mistake
+
+commit 4fab4825f8773975b0278aa5ef08e4f5ceb52a13
+Author: Murshid Raja <murshidraja652@example.com>
+Date:   Fri Jun 21 01:25:43 2024 +0530
+
+    5.4: Commleted commit
+
+commit 191f986d86e276bb1a29bd00ce5e0d5792fc3e9c
+Author: Murshid Raja <murshidraja652@example.com>
+Date:   Fri Jun 21 01:12:15 2024 +0530
+
+    5.3: updated commit message
+
+commit 79b96e04b23c0b93f43a9ed3bfe440d8f006fbb6
+Merge: 0d6480a a356a1d
+Author: Murshid Raja <murshidraja652@example.com>
+Date:   Fri Jun 21 01:09:07 2024 +0530
+
+    5.2: updated commit message
+
+commit 0d6480a89d20d80b1dba060927bd7f95b8522d66
+Author: Murshid Raja <murshidraja652@example.com>
+Date:   Fri Jun 21 00:59:44 2024 +0530
+
+    5.2: updated commit message
+
+commit a356a1dbfb6a04aca02fffea84f7331fe1c20c28
+Author: Murshid Raja <murshidraja652@example.com>
+Date:   Fri Jun 21 00:59:44 2024 +0530
+
+    5.1: updated commit message commit
+
+commit f73e4fab25ba8012d688eea8be89e731e2e8d22c
+Author: Murshid Raja <murshidraja652@example.com>
+Date:   Fri Jun 21 00:48:08 2024 +0530
+
+    4: git diff command
+
+commit 497ecf18b4ea10f13f0ba0db63fb0757119d8732
+Author: Murshid Raja <murshidraja652@example.com>
+Date:   Fri Jun 21 00:38:06 2024 +0530
+
+    3: git status command
+
+commit 667beda7fb1a8b604f087b0ba39d884cc529daf1
+Author: Murshid Raja <murshidraja652@example.com>
+Date:   Fri Jun 21 00:00:35 2024 +0530
+
+    2.1 : Retry git add commands
+
+commit 392590750dccce5dfc431edad580f5e6c8e94765
+Author: Murshid Raja <murshidraja652@example.com>
+Date:   Thu Jun 20 23:59:09 2024 +0530
+
+    2: git add commands
+
+commit d79d6d8cca12f5761c44e965e27d35316501dead
+Author: Murshid Raja <murshidraja652@example.com>
+Date:   Thu Jun 20 23:08:15 2024 +0530
+
+    first commit
+```
