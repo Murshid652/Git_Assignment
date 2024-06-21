@@ -1164,3 +1164,20 @@ PS C:\Users\acer\Desktop\git_assign> git rebase branch1
 Successfully rebased and updated refs/heads/branch2.
 ```
 
+<br>
+
+## git revert 
+revert some existing commits
+
+```
+git revert c4a38b53560357e51b8073c0460ca1ce901b674b
+Auto-merging Readme.md
+CONFLICT (content): Merge conflict in Readme.md
+error: could not revert c4a38b5... 9: git rm command
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+```
