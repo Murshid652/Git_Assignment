@@ -522,4 +522,43 @@ PS C:\Users\acer\Desktop\git_assign> git branch
   new-branch-name
 ```
 
+<br>
+
+## git merge 
+This command is used to integrate changes from different branches.
+
+
+### git merge branch-name
+this command is used to merge changes into current branch
+
+```
+PS C:\Users\acer\Desktop\git_assign> git checkout branch1
+Switched to branch 'branch1'
+PS C:\Users\acer\Desktop\git_assign> git add .           
+PS C:\Users\acer\Desktop\git_assign> git commit -m "14.1 : Temporary changes for merge command"
+[branch1 a9620f3] 14.1 : Temporary changes for merge command
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 folder1/file4.txt
+PS C:\Users\acer\Desktop\git_assign> git push origin branch1
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (1/1), done.
+Writing objects: 100% (2/2), 265 bytes | 265.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Murshid652/Git_Assignment.git
+   e9e02f8..a9620f3  branch1 -> branch1
+PS C:\Users\acer\Desktop\git_assign> git checkout branch2
+Switched to branch 'branch2'
+PS C:\Users\acer\Desktop\git_assign> git merge branch1
+Updating e9e02f8..a9620f3
+Fast-forward
+ folder1/file4.txt | 1 -
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 folder1/file4.txt
+PS C:\Users\acer\Desktop\git_assign> git push origin branch2
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Murshid652/Git_Assignment.git
+   e9e02f8..a9620f3  branch2 -> branch2
+```
 
