@@ -1153,5 +1153,14 @@ v1.0.1-9-g8a7ceaa
 
 
 
+<br>
 
+## git rebase
+Reapply commits on top of another base tip
+```
+PS C:\Users\acer\Desktop\git_assign> git checkout branch2 
+Already on 'branch2'
+PS C:\Users\acer\Desktop\git_assign> git rebase branch1
+Successfully rebased and updated refs/heads/branch2.
+```
 
